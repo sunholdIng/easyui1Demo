@@ -1,0 +1,40 @@
+<div id="searchNavDiv" class="easyui-layout" data-options="fit:true" style="height:600px;border:10px;">
+    <form id="stockSearchAndManageForm" method="post">
+        <!--导航栏-->
+        <div id="searchConditionDiv" data-options="region:'north'" style="overflow:hidden;">
+            <div data-options="fit:true;" style="margin-left: 20px;height:40px;border:10px;">
+                <table width="80%">
+                    <tr style="height: 30px">
+                        <td width="25%">
+                            品牌：<input>
+                        </td>
+                        <td width="25%">
+                            型号：<input>
+                        </td>
+                        <td width="30%">
+                            串码：<input>
+                            <a id="searchBtn" class="easyui-linkbutton"
+                               iconCls="icon-search">查询
+                            </a>
+                        </td>
+                        <td width="70%" align="center">
+                            <a align="right" id="importStockBatchBtn" class="easyui-linkbutton"
+                               style="width: 110px;height: 18.5px">
+                                批量更新库存
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+                </tr>
+                </table>
+            </div>
+        </div>
+
+        <!--查询结果-->
+        <div id="resultListDiv" data-options="region:'center'">
+            <div id="stockConfirm-grid" data-options="fit:true"></div>
+        </div>
+    </form>
+</div>
+<script type="text/javascript" src="../js/stock.js"></script>
+
